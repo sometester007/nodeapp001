@@ -5,8 +5,8 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
   res.send('users list');
 });
-router.get('/:id', function(req, res, next) {
-  res.send(req.params.id);
+router.get('/:id', (req, res, next)=> {
+  res.send(req.params.id); 
 });
 
 module.exports = router;
